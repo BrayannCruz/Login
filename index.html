@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="fixed-top bg-dark">
+            <nav class="navbar">
+                <form class="form-inline input-login">
+                    <div class="input-group">
+                        <input id="usr" type="text" class="form-control input-login" placeholder="Ingrese su Usuario" aria-label="Usuario" aria-describedby="basic-addon1">
+                        <input id="psw" type="text" class="form-control input-login" placeholder="Ingrese su contraseña" aria-label="Contraseña" aria-describedby="basic-addon1">
+                        <button class=" btn-primary" onclick="login()">Ingresar</button>
+                    </div>
+                </form>
+            </nav>
+        </header>
+        <div id="contenido" class="con container-md bg-light">
+            <div id="msg" class="col col-lg-12 ">
+                <div class="col-lg-4 bg-success mensaje">
+                    <h4>Bienvenido al sistema
+                        <p id="u"></p>
+                    </h4>
+                </div>
+                <div class="col-lg-4 bg-danger mensaje ue">
+                    <h4>Bienvenido al sistema
+                        <p id="uerr"></p>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer bg-dark fixed-bottom">
+        <p>Brayann Jesus Cruz Jasso</p>
+    </footer>
+</body>
+<script src="js/bootstrap/bootstrap.js "></script>
+<script src="js/site.js"></script>
+<script src="js/jquery/jquery-3.6.0.min.js"></script>
+
+</html>
