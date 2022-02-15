@@ -7,12 +7,17 @@ function login() {
     if (u == usr && p == psw) {
         alert("Bienvenido " + usr);
         $('#msg').css({ 'display': 'flex' });
+        $('#success').css({ 'display': 'flex' });
+        $('#fail').css({ 'display': 'none' });
         $('.input-login').css({ 'display': 'none' });
         $('#u').text(usr);
     } else {
+        $('#msg').css({ 'display': 'flex' });
+        $('#fail').css({ 'display': 'flex' });
+        $('#success').css({ 'display': 'none' });
         alert("Usuario o contraseña Incorrectos, intente de nuevo");
-        $('.ue').css({ 'display': 'flex' });
-        $('#uerr').text("ERROR AL INICIAR SESION");
+        $document.getElementById('#u').innerHTML = "Párrafo de texto";
+        $('#u').text("ERROR AL INICIAR SESION");
     }
 
 
